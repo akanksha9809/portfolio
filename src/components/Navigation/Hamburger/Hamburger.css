@@ -1,0 +1,24 @@
+/* .hamburger{
+    display: none;
+} */
+
+@media only screen and (max-width: 600px) {
+  /* .hamburger{
+        display: inline-block;
+    } */
+}
+
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.bars{
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.ant-dropdown-menu-title-content a {
+  color: black !important;
+}

@@ -1,0 +1,13 @@
+.app-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation{
+  position: fixed;
+  width: 100%;
+}
+
+.routes-container{
+  padding-top: 50px;
+}
