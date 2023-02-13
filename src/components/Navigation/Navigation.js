@@ -8,7 +8,7 @@ function Navigation() {
     <div className="nav-container">
       <div className="logo">
         <Link to="/home" style={{ textDecoration: "none" }}>
-          <img src={require("./New-logo.png")} alt="" />
+          <img src={require("./logo2.png")} alt="" />
         </Link>
       </div>
 

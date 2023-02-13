@@ -3,7 +3,10 @@
   width: 70%;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid white;
+  border: 2px solid white;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  /* background-color: var(--ternary-color); */
 }
 
 .left-column {
@@ -15,8 +18,13 @@
   flex: 2.5;
 }
 
-.left-column p{
-    word-break: break-word;
+.heading,
+p {
+  color: white;
+}
+
+.left-column p {
+  word-break: break-word;
 }
 
 .right-column {
@@ -24,11 +32,13 @@
   height: 200px;
   width: 300px;
   flex: 1.5;
+  /* border-left: 2px solid white; */
 }
 
 .right-column img {
   height: 100%;
   width: 100%;
+  padding: 10px 20px;
 }
 
 .footer {
@@ -37,22 +47,34 @@
   gap: 10px;
 }
 
-.button {
-  background-color: var(--primary-text-color);
+.footer .icons {
   color: var(--secondary-text-color);
   font-weight: 600;
-  padding-block: 5px;
-  padding-inline: 10px;
-  border-radius: 10px;
+}
+
+.button {
+  display: flex;
+
+  justify-content: center;
+  gap: 5px;
+  padding: 12px 16px;
+  background-color: var(--primary-text-color);
+  color: var(--secondary-text-color) !important;
+  border-radius: 4px;
   border: none;
   cursor: pointer;
-  transition: ease-in-out 0.2;
+  text-transform: uppercase;
+  font-weight: 700;
+  user-select: none;
 }
 
 .button:hover {
-  transform: scale(0.9);
+  background-color: #54cbb7;
 }
 
+.button:active {
+  background-color: #54cbb7;
+}
 
 @media only screen and (max-width: 850px) {
   .singleProjectContainer {

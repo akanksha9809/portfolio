@@ -4,9 +4,8 @@
   align-items: center;
   justify-content: space-between;
 
-  /* border: 1px solid yellow; */
   padding-top: 10px;
-  padding-inline: 20px;
+  padding-inline: 50px;
 
   width: 100vw;
 }
@@ -30,6 +29,7 @@
 .nav-links {
   font-size: 1.1rem;
   font-weight: 500;
+  color: white;
 }
 
 .nav-links:hover {
@@ -49,8 +49,20 @@
 @media only screen and (max-width: 600px) {
   .hamburger {
     display: inline-block;
+    color: white;
   }
   .nav-links {
     display: none;
   }
+  .nav-container{
+    padding-inline: 20px;
+  }
 }
+
+@media only screen and (max-width: 1043px){
+  .nav-container{
+    padding-inline: 20px;
+  }
+}
+
+

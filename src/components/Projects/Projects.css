@@ -1,20 +1,20 @@
-.projects-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 100px;
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
 }
 
-.primary-color{
-    color: var(--primary-text-color);
+.primary-color {
+  color: var(--primary-text-color);
 }
 
-.project-header{
-    font-size: 2.1rem;
-    margin-top: 45px;
-    margin-bottom: 25px;
-    margin-inline: auto;
-
+.project-header {
+  font-size: 2.1rem;
+  margin-top: 45px;
+  margin-bottom: 25px;
+  margin-inline: auto;
+  color: white;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./SingleProject.css";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 function SingleProject({ item }) {
   console.log(item.img);
@@ -11,12 +12,24 @@ function SingleProject({ item }) {
         <div className="footer">
           <button className="button" onClick={() => window.open("#")}>
             Video Demo
+            <div className="icons">
+              <FaExternalLinkAlt />
+            </div>
           </button>
           <button className="button" onClick={() => window.open("#")}>
             Live Link
+            <div className="icons">
+              <FaExternalLinkAlt />
+            </div>
           </button>
-          <button className="button" onClick={() => window.open("#")}>
+          <button
+            className="button"
+            onClick={() => window.open(item.gitHubLink)}
+          >
             GitHub
+            <div className="icons">
+              <FaExternalLinkAlt />
+            </div>
           </button>
         </div>
       </div>
@@ -28,3 +41,8 @@ function SingleProject({ item }) {
 }
 
 export default SingleProject;
+{
+  /* <div className="all-icons">
+            <IoOpenOutline/>
+            </div> */
+}

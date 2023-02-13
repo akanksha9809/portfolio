@@ -4,7 +4,7 @@ import Typed from "react-typed";
 
 function Home() {
   return (
-    <div className="home-container white">
+    <div className="home-container">
       <div className="home-container-left">
         <img id="splash" src={require("./Home-bg.png")} alt="" />
         <img src={require("./Home-img.png")} alt="" />

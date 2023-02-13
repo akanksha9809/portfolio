@@ -18,6 +18,7 @@
   justify-content: center;
   gap: 20px;
   min-width: 400px;
+  padding-inline: 40px;
 }
 
 input {
@@ -25,15 +26,24 @@ input {
   width: 100%;
   background-color: var(--ternary-color);
   color: white;
-  border: none;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 4px;
 }
 
 textarea {
   background-color: var(--ternary-color);
-  border: none;
+  border: 2px solid var(--primary-text-color);
   resize: none;
   padding: 10px;
   width: 100%;
+  border-radius: 4px;
+  color: white;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  /* opacity: 1; Firefox */
 }
 
 .submit-btn {
@@ -42,7 +52,7 @@ textarea {
   transition: all 0.2s;
   background-color: var(--primary-text-color);
   color: var(--secondary-text-color);
-  border-radius: 10px;
+  border-radius: 4px;
   width: 120px;
   font-weight: 600;
   text-decoration: none;
@@ -51,8 +61,7 @@ textarea {
 }
 
 .submit-btn:hover {
-  transform: scale(0.9);
-  font-weight: 600;
+  transform: scale(0.95);
 }
 
 @media only screen and (max-width: 564px) {

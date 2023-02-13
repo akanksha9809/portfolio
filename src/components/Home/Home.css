@@ -1,12 +1,9 @@
-* {
-  color: white;
-}
-
 .home-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  height: 75vh;
 }
 
 .home-container-left {
@@ -21,7 +18,14 @@
   position: relative;
   height: 100%;
   animation: animateUser 14s infinite alternate;
-  overflow: hidden;
+}
+
+.home-container-right h2 {
+  color: white;
+}
+
+.home-container-right span {
+  color: white;
 }
 
 @keyframes animateUser {
@@ -29,7 +33,7 @@
     transform: scale(0.9);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
@@ -56,6 +60,7 @@
   .home-container {
     flex-direction: column;
     justify-content: center;
+    height: unset;
   }
 }
 
@@ -66,10 +71,10 @@
   }
   @keyframes animateUser {
     0% {
-      transform: scale(0.7);
+      transform: scale(0.9);
     }
     50% {
-      transform: scale(0.9);
+      transform: scale(1.1);
     }
   }
 }
@@ -77,18 +82,23 @@
 @media only screen and (max-width: 519px) {
   .home-container-left img {
     height: 60%;
-    animation: animateUser;
+    width: 80%;
   }
   .home-container-left img {
     position: relative;
     height: 80%;
   }
-  @keyframes animateUser {
+  .home-container-left {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* @keyframes animateUser {
     0% {
       transform: scale(1);
     }
     50% {
       transform: scale(1);
     }
-  }
+  } */
 }
