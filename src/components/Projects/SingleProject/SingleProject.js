@@ -10,27 +10,41 @@ function SingleProject({ item }) {
         <h2 className="heading">{item.title}</h2>
         <p>{item.description}</p>
         <div className="footer">
-          <button className="button" onClick={() => window.open("#")}>
-            Video Demo
-            <div className="icons">
-              <FaExternalLinkAlt />
-            </div>
-          </button>
-          <button className="button" onClick={() => window.open("#")}>
-            Live Link
-            <div className="icons">
-              <FaExternalLinkAlt />
-            </div>
-          </button>
-          <button
-            className="button"
-            onClick={() => window.open(item.gitHubLink)}
-          >
-            GitHub
-            <div className="icons">
-              <FaExternalLinkAlt />
-            </div>
-          </button>
+          {item.liveLink.trim().length > 0 && (
+            <button
+              className="button"
+              onClick={() => window.open(item.liveLink)}
+            >
+              Live Link
+              <div className="icons">
+                <FaExternalLinkAlt />
+              </div>
+            </button>
+          )}
+
+          {item.videoLink.trim().length > 0 && (
+            <button
+              className="button"
+              onClick={() => window.open(item.videoLink)}
+            >
+              Demo
+              <div className="icons">
+                <FaExternalLinkAlt />
+              </div>
+            </button>
+          )}
+
+          {item.gitHubLink.trim().length > 0 && (
+            <button
+              className="button"
+              onClick={() => window.open(item.gitHubLink)}
+            >
+              GitHub
+              <div className="icons">
+                <FaExternalLinkAlt />
+              </div>
+            </button>
+          )}
         </div>
       </div>
       <div className="right-column">
@@ -41,8 +55,3 @@ function SingleProject({ item }) {
 }
 
 export default SingleProject;
-{
-  /* <div className="all-icons">
-            <IoOpenOutline/>
-            </div> */
-}

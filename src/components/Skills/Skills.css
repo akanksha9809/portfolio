@@ -29,6 +29,7 @@ h3 {
   flex-wrap: wrap;
   gap: 50px;
   column-gap: 100px;
+  z-index: -1;
 }
 
 .skill-item {

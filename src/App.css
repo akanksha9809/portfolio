@@ -1,14 +1,14 @@
-.app-container{
+.app-container {
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
-.navigation{
+.navigation {
   position: fixed;
   width: 100%;
 }
 
-.routes-container{
+.routes-container {
   padding-top: 50px;
 }
